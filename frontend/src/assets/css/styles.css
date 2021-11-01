@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root {/* definindo variavel global para as cores utilizadas na aplicacao */
+  --color-primary: #FF8400;
+  --collor-error:#FF0000;
+}
+
+html, body {/* elementos principais do corpo da pagina */ 
+    height: 100%;/* altura ocupada */
+    font-family: "Ubuntu", sans-serif;/* fonte utilizada */
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.bg-primary {
+    background-color: var(--color-primary) !important;
+}
+
+.text-primary {
+    color: var(--color-primary) !important;
+}
